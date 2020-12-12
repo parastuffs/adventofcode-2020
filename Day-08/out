@@ -1,0 +1,74 @@
+Current PC: 0
+opcode: nop, mod: 0
+Current PC: 1
+opcode: acc, mod: 1
+Current PC: 2
+opcode: jmp, mod: 4
+Current PC: 6
+opcode: acc, mod: 1
+Current PC: 7
+opcode: jmp, mod: -4
+Current PC: 3
+opcode: acc, mod: 3
+Current PC: 4
+opcode: jmp, mod: -3
+Current PC: 1
+Old code: ['nop +0', 'acc +1', 'jmp +4', 'acc +3', 'jmp -3', 'acc -99', 'acc +1', 'jmp -4', 'acc +6']
+Changing jmp=>nop line 2
+New code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'jmp -3', 'acc -99', 'acc +1', 'jmp -4', 'acc +6']
+New code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'jmp -3', 'acc -99', 'acc +1', 'jmp -4', 'acc +6']
+Current PC: 0
+opcode: nop, mod: 0
+Current PC: 1
+opcode: acc, mod: 1
+Current PC: 2
+opcode: nop, mod: 4
+Current PC: 3
+opcode: acc, mod: 3
+Current PC: 4
+opcode: jmp, mod: -3
+Current PC: 1
+Old code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'jmp -3', 'acc -99', 'acc +1', 'jmp -4', 'acc +6']
+Changing jmp=>nop line 4
+New code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'nop -3', 'acc -99', 'acc +1', 'jmp -4', 'acc +6']
+New code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'nop -3', 'acc -99', 'acc +1', 'jmp -4', 'acc +6']
+Current PC: 0
+opcode: nop, mod: 0
+Current PC: 1
+opcode: acc, mod: 1
+Current PC: 2
+opcode: nop, mod: 4
+Current PC: 3
+opcode: acc, mod: 3
+Current PC: 4
+opcode: nop, mod: -3
+Current PC: 5
+opcode: acc, mod: -99
+Current PC: 6
+opcode: acc, mod: 1
+Current PC: 7
+opcode: jmp, mod: -4
+Current PC: 3
+Old code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'nop -3', 'acc -99', 'acc +1', 'jmp -4', 'acc +6']
+Changing jmp=>nop line 7
+New code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'nop -3', 'acc -99', 'acc +1', 'nop -4', 'acc +6']
+New code: ['nop +0', 'acc +1', 'nop +4', 'acc +3', 'nop -3', 'acc -99', 'acc +1', 'nop -4', 'acc +6']
+Current PC: 0
+opcode: nop, mod: 0
+Current PC: 1
+opcode: acc, mod: 1
+Current PC: 2
+opcode: nop, mod: 4
+Current PC: 3
+opcode: acc, mod: 3
+Current PC: 4
+opcode: nop, mod: -3
+Current PC: 5
+opcode: acc, mod: -99
+Current PC: 6
+opcode: acc, mod: 1
+Current PC: 7
+opcode: nop, mod: -4
+Current PC: 8
+opcode: acc, mod: 6
+Last ACC = -88
